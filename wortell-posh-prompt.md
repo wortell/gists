@@ -1,5 +1,8 @@
 # Wortell Polish POSH Prompt
 
+![image](https://user-images.githubusercontent.com/9781801/115554228-8687fb80-a2ae-11eb-8998-4d2fd0ab7581.png)
+
+
 ## Installation 
 
  1. If you haven't already done so, go to [ohmyposh.dev](https://ohmyposh.dev/docs/installation) website to follow the installation guide of Oh my Posh.
