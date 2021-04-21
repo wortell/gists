@@ -1,0 +1,84 @@
+{
+    "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+    "blocks": [
+      {
+        "alignment": "left",
+        "horizontal_offset": 0,
+        "vertical_offset": 0,
+        "segments": [
+
+          {
+            "background": "#8300FF",
+            "foreground": "#0c0116",
+            "powerline_symbol": "",
+            "leading_diamond": "",
+            "trailing_diamond": "",
+            "properties": {
+              "prefix": "  ",
+              "style": "folder"
+            },
+            "style": "diamond",
+            "type": "path"
+          },
+          {
+            "background": "#0c0116",
+            "foreground": "#0c0116",
+            "powerline_symbol": "",
+            "properties": {
+              "display_stash_count": true,
+              "display_upstream_icon": true,
+              "status_colors_enabled": true,
+              "local_changes_color": "#4CD275",
+              "ahead_and_behind_color": "#e43b44",
+              "behind_color": "#f77622",
+              "ahead_color": "#0078d4",
+              "stash_count_icon": "\uF692 "
+            },
+            "style": "powerline",
+            "type": "git"
+          },
+          {
+            "type": "kubectl",
+            "style": "powerline",
+            "powerline_symbol": "",
+            "foreground": "#262b44",
+            "background": "#ffea00",
+            "properties": {
+              "prefix": "<transparent></> \uFD31",
+              "template": " {{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}}"
+            }
+          },
+          {
+            "type": "az",
+            "style": "powerline",
+            "powerline_symbol": "\uE0B0",
+            "foreground": "#0c0116",
+            "background": "#0078d4",
+            "properties": {
+              "display_id": false,
+              "display_name": true,
+              "info_separator": " @ ",
+              "prefix": " \uFD03 "
+            }
+          },
+          {
+            "background": "#4CD275",
+            "foreground": "#ffffff",
+            "leading_diamond": "",
+            "properties": {
+              "always_enabled": true,
+              "color_background": true,
+              "display_exit_code": false,
+              "error_color": "#ff0044",
+              "prefix": "<transparent></> "
+            },
+            "style": "diamond",
+            "trailing_diamond": "",
+            "type": "exit"
+          }
+        ],
+        "type": "prompt"
+      }
+    ],
+    "final_space": true
+}
