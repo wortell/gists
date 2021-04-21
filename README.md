@@ -1,4 +1,4 @@
 # gists
 All Wortell related gists!
 
-# [Wortell Polish POSH Prompt](https://raw.githubusercontent.com/wortell/gists/main/wortell-posh-prompt.json)
+# [Wortell POSH Prompt](https://github.com/wortell/gists/blob/main/wortell-posh-prompt.md)
