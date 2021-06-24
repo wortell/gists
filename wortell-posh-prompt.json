@@ -22,7 +22,7 @@
           },
           {
             "background": "#0c0116",
-            "foreground": "#0c0116",
+            "foreground": "#8300FF",
             "powerline_symbol": "",
             "properties": {
               "display_stash_count": true,
@@ -34,26 +34,26 @@
               "ahead_color": "#0078d4",
               "stash_count_icon": "\uF692 "
             },
-            "style": "powerline",
+            "style": "diamond",
             "type": "git"
           },
           {
+            "foreground": "#0c0116",
+            "background": "#4CD275",
             "type": "kubectl",
             "style": "powerline",
             "powerline_symbol": "",
-            "foreground": "#262b44",
-            "background": "#ffea00",
             "properties": {
-              "prefix": "<transparent></> \uFD31",
-              "template": " {{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}}"
+              "prefix": " \uFD31",
+              "template": " {{.Context}}{{if .Namespace}} : {{.Namespace}}{{end}}"
             }
           },
           {
             "type": "az",
             "style": "powerline",
             "powerline_symbol": "\uE0B0",
-            "foreground": "#0c0116",
-            "background": "#0078d4",
+            "foreground": "#4CD275",
+            "background": "#0c0116",
             "properties": {
               "display_id": false,
               "display_name": true,
@@ -69,8 +69,8 @@
               "always_enabled": true,
               "color_background": true,
               "display_exit_code": false,
-              "error_color": "#ff0044",
-              "prefix": "<transparent></> "
+              "error_color": "#8300FF",
+              "prefix": "  "
             },
             "style": "diamond",
             "trailing_diamond": "",
