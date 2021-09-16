@@ -27,4 +27,4 @@ Import-Module terminal-icons
 
 To add this to your machine profile
 ```powershell
-echo "Import-Module terminal-icons">>$PSHome/profile.ps1
+echo "Set-PoshPrompt ./wortell-posh-prompt.json`nImport-Module terminal-icons">>$PSHome/profile.ps1
