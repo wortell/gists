@@ -7,7 +7,24 @@
 
  1. If you haven't already done so, go to [ohmyposh.dev](https://ohmyposh.dev/docs/installation) website to follow the installation guide of Oh my Posh.
  2. You need to install a [Nerd Font](https://www.nerdfonts.com/) to display the symbols correctly.
- 3. Download the json file using `Invoke-WebRequest -Uri "https://raw.githubusercontent.com/wortell/gists/main/wortell-posh-prompt.json" -OutFile "./wortell-posh-prompt.json"` here 
- 4. Set the Wortell POSH Prompt using `Set-PoshPrompt ./wortell-posh-prompt.json`
+ 3. Download the json file
+ ```powershell
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/wortell/gists/main/wortell-posh-prompt.json" -OutFile "./wortell-posh-prompt.json"
+``` 
+ 4. Set the Wortell POSH Prompt 
+```powershell
+Set-PoshPrompt ./wortell-posh-prompt.json
+```
 
-* Optional: Install the terminal-icons module using `Install-Module terminal-icons` after this import the terminal-icons module using `Import-Module terminal-icons`
+* Optional: Install the terminal-icons module
+```powershell
+Install-Module terminal-icons
+``` 
+import the terminal-icons module
+```powershell
+Import-Module terminal-icons
+```
+
+To add this to your machine profile
+```powershell
+echo "Set-PoshPrompt ./wortell-posh-prompt.json`nImport-Module terminal-icons">>$PSPath/profile.ps1
